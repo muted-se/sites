@@ -1,0 +1,10 @@
+---
+name: 'Continous Integration'
+on: [workflow_dispatch]
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
+...
