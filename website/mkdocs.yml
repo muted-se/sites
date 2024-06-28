@@ -1,0 +1,28 @@
+site_name: B-landia.net
+site_url: https://b-landia.net
+site_description: "A somewhat original site of nerdery and linux evangelism"
+site_author: Joakim Dellrud
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
+nav:
+  - 'Home': 'index.md'
+  - Blog:
+    - blog/index.md
+  - 'About': 'about.md'
+  - 'Guides': 'guides/index.md'
+
+plugins:
+  - search:
+      enabled: true
+  - social:
+      enabled: true
+  - tags:
+      enabled: true
+  - blog:
+      enabled: true
+      authors: true
+      blog_toc: true
