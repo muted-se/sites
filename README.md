@@ -1,7 +1,8 @@
-# Template README #
+# Sites #
 ## Introduction ##
-This is a basic example of a `README.md` file that is used for all my 
-repositories.
+This repository contains the source for all my different websites projects. It
+is all __currently__ built with `mkdocs` via `python` to generate pure HTML 
+static HTML webpages for speed and security.
 
-## Running ##
-./run.sh npm start -- --host=0.0.0.0
+## Design ##
+

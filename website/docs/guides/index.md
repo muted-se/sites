@@ -1,1 +1,6 @@
-# Guides
+---
+hide:
+  - footer
+---
+
+# 📋 Guides #

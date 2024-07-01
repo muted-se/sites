@@ -4,16 +4,36 @@ site_description: "A somewhat original site of nerdery and linux evangelism"
 site_author: Joakim Dellrud
 theme:
   name: material
+  palette:
+    primary: blue grey
+    accent: grey
+    scheme: slate
   features:
     - navigation.instant
     - navigation.tabs
     - navigation.indexes
+    - content.tabs.link
+    - navigation.footer
+    - header.autohide
 nav:
   - 'Home': 'index.md'
-  - Blog:
-    - blog/index.md
   - 'About': 'about.md'
   - 'Guides': 'guides/index.md'
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+
 
 plugins:
   - search:
@@ -26,3 +46,18 @@ plugins:
       enabled: true
       authors: true
       blog_toc: true
+      blog_dir: .
+
+copyright: Copyright &copy; 2008 - 2024 Joakim Dellrud
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/github
+      link: https://github.com/spixx/
+    - icon: fontawesome/brands/tumblr
+      link: https://www.tumblr.com/joakim-dellrud
+    - icon: fontawesome/brands/linkedin
+      link: https://se.linkedin.com/in/joakimdellrud
