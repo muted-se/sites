@@ -47,6 +47,7 @@ jobs:
       - name: "Compress the results"
         id: "compress-the-results"
         run: |
+          cd blog
           tar -zcvf static.tar.gz static/
 
       - name: "Create Release"
