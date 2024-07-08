@@ -40,17 +40,14 @@ jobs:
       - name: "Generate Static HTML"
         id: "generate-static-html"
         run: |
-          cd blog
+          cd blog/
           mkdir static/
           mkdocs build -d static/
-          ls -lah
-          pwd
 
       - name: "Compress the results"
         id: "compress-the-results"
         run: |
-          pwd
-          ls -lah
+          cd blog/
           tar -zcvf static.tar.gz static/
 
       - name: "Create Release"
