@@ -43,10 +43,14 @@ jobs:
           cd blog
           mkdir static/
           mkdocs build -d static/
+          ls -lah
+          pwd
 
       - name: "Compress the results"
         id: "compress-the-results"
         run: |
+          pwd
+          ls -lah
           tar -zcvf static.tar.gz static/
 
       - name: "Create Release"
