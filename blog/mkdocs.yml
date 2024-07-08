@@ -1,3 +1,4 @@
+---
 site_name: B-landia.net
 site_url: https://b-landia.net
 site_description: "A somewhat original site of nerdery and linux evangelism"
@@ -61,3 +62,4 @@ extra:
       link: https://www.tumblr.com/joakim-dellrud
     - icon: fontawesome/brands/linkedin
       link: https://se.linkedin.com/in/joakimdellrud
+...
