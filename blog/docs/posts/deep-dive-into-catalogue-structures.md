@@ -20,6 +20,8 @@ and harddrive mount-points in Linux. It is loosely based on the now defunct NSA
 guide to hardening CentOS/RHEL but the [wayback machine](https://web.archive.org/web/20140404154830/https://www.nsa.gov/ia/_files/os/redhat/NSA_RHEL_5_GUIDE_v4.2.pdf)
 has a copy of the now very old PDF.
 
+> this is currently in draft. sorry
+
 <!-- more -->
 ## Mount-points ##
 
