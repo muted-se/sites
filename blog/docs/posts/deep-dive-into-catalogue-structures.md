@@ -9,7 +9,6 @@ categories:
     - deep-dive
     - folders
     - structure
-draft: true
 ---
 
 # Deep dive into catalogue structures #
