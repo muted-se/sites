@@ -61,19 +61,6 @@ else
   exit 1
 fi
  
-# ==================================
-# Update manifest file (optional)
-# assuming Rust project with Cargo.toml
-# modify this as needed for your project
-# ==================================
- 
-# Update version in Cargo.toml
-sed -i "s/^version = .*/version = \"$VERSION_NEXT\"/" Cargo.toml
- 
-# Update Cargo.lock as this changes when
-# updating the version in your manifest
-cargo generate-lockfile
- 
 # Commit the changes
 git add .
 git commit -m "build: bump Cargo.toml version - v$VERSION_NEXT"
