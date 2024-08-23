@@ -16,10 +16,12 @@ theme:
     - content.tabs.link
     - navigation.footer
     - header.autohide
+
 nav:
   - 'Home': 'index.md'
   - 'About': 'about.md'
   - 'Guides': 'guides/index.md'
+  
 markdown_extensions:
   - admonition
   - pymdownx.details
