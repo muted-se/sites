@@ -63,7 +63,7 @@ fi
  
 # Commit the changes
 git add .
-git commit -m "build: bump Cargo.toml version - v$VERSION_NEXT"
+git commit -m "bumping version to - v$VERSION_NEXT"
  
 # ==================================
 # Create git tag for new version
