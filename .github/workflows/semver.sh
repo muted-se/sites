@@ -61,10 +61,6 @@ else
   exit 1
 fi
  
-# Commit the changes
-git add .
-git commit -m "bumping version to - v$VERSION_NEXT"
- 
 # ==================================
 # Create git tag for new version
 # ==================================
