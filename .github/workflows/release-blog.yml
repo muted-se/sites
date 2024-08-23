@@ -1,7 +1,6 @@
 ---
 name: '📦 Create release for the Blog'
 on:
-  workflow_dispatch:
   pull_request:
     types:
       - closed

@@ -34,8 +34,6 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
-
-
 plugins:
   - search:
       enabled: true
