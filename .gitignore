@@ -1,3 +1,17 @@
+################################################################################
+#   __  __       _           _                                                 #
+#  |  \/  |     | |         | |                                                #
+#  | \  / |_   _| |_ ___  __| |                                                #
+#  | |\/| | | | | __/ _ \/ _` |                                                #
+#  | |  | | |_| | ||  __/ (_| |                                                #
+#  |_|  |_|\__,_|\__\___|\__,_|                                                #
+#          In Torvalds we trust                                                #
+################################################################################
+## gitignore configuration file                                               ##
+################################################################################
+.venv
+
+## Generated
 # Created by https://www.toptal.com/developers/gitignore/api/linux,backup,python,dotenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,backup,python,dotenv
 
