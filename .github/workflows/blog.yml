@@ -1,0 +1,60 @@
+---
+name: '📦 Generate static HTML - Blog'
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+    paths:
+      - blog/**
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    name: Build Blog static HTML
+    steps:
+      - name: "Checkout source-code"
+        id: "checkout-source-code"
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v 4.1.7 https://github.com/actions/checkout/commit/692973e3d937129bcbf40652eb9f2f61becf3332
+        with:
+          token: ${{ github.token }}
+          clean: true
+          fetch-depth: 1
+
+      - name: "🐍 Setup python"
+        id: "setup-python"
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # V 5.4.0 https://github.com/actions/setup-python/commit/42375524e23c412d93fb67b49958b491fce71c38
+        with:
+          cache: 'pip'
+          python-version: '3.13'
+
+      - name: "💿 Install dependencies"
+        id: "install-dependencies"
+        run: |
+          pip install -r src/requirements.txt
+
+      - name: "🖨️ Generate Static HTML"
+        id: "generate-static-html"
+        run: |
+          cd blog/
+          mkdir static/
+          mkdocs build -d static/
+
+      - name: "💾 Upload artifact"
+        uses: actions/upload-artifact@v4
+        with:
+          name: blog
+          path: blog/static/
+          retention-days: 90
+          overwrite: true
+
+...
