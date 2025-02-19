@@ -1,5 +1,5 @@
 ---
-name: '📦 Create release for the Blog'
+name: '📦 Generate static HTML - Blog'
 on:
   pull_request:
     types:
@@ -30,34 +30,31 @@ jobs:
           clean: true
           fetch-depth: 1
 
-      - name: "Get current time and date"
-        id: "date"
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: "🐍 Setup python"
+        id: "setup-python"
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # V 5.4.0 https://github.com/actions/setup-python/commit/42375524e23c412d93fb67b49958b491fce71c38
+        with:
+          cache: 'pip'
+          python-version: '3.13'
 
-      - name: "Install dependencies"
+      - name: "💿 Install dependencies"
         id: "install-dependencies"
         run: |
           pip install -r src/requirements.txt
 
-      - name: "Generate Static HTML"
+      - name: "🖨️ Generate Static HTML"
         id: "generate-static-html"
         run: |
           cd blog/
           mkdir static/
           mkdocs build -d static/
 
-      - name: "Compress the results"
-        id: "compress-the-results"
-        run: |
-          cd blog/
-          tar -zcvf static.tar.gz static/
-
-      - name: "Create Release"
-        uses: softprops/action-gh-release@a74c6b72af54cfa997e81df42d94703d6313a2d0 # v 2.0.6 https://github.com/softprops/action-gh-release/commit/a74c6b72af54cfa997e81df42d94703d6313a2d0
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: "💾 Upload artifact"
+        uses: actions/upload-artifact@v4
         with:
-          make_latest: true
-          files: static.tar.gz
-          name: "${{ steps.date.outputs.date }} release"
-          body: "This is the latest release of the Blog any further information can be found in the commits"
+          name: blog
+          path: blog/static/
+          retention-days: 90
+          overwrite: true
+
 ...
