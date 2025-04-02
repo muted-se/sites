@@ -5,6 +5,7 @@ date: 2021-03-28
 categories:
     - general
     - thoughts
+    - archive
 ---
 
 # Because I can #

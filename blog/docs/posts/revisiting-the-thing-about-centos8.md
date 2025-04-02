@@ -5,6 +5,7 @@ date: 2023-08-24
 categories:
     - general
     - thoughts
+    - archive
 ---
 
 # Revisiting the thing about CentOS 8 #

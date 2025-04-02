@@ -6,6 +6,7 @@ categories:
     - general
     - thoughts
     - opensource
+    - archive
 ---
 
 # A knife in the back #

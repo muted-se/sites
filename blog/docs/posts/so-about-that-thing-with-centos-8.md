@@ -6,6 +6,7 @@ categories:
     - general
     - thoughts
     - opensource
+    - archive
 ---
 
 # So about that thing with CentOS 8 #

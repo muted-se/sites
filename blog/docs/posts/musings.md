@@ -5,6 +5,7 @@ date: 2020-03-21
 categories:
     - general
     - thoughts
+    - archive
 ---
 
 # Musings #

@@ -7,6 +7,7 @@ categories:
     - thoughts
     - freedom
     - opensource
+    - archive
 ---
 
 # I am Free! #
