@@ -21,7 +21,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
+    if: ${{ github.event.pull_request.merged == true || github.event_name == 'schedule' }}
     name: Build Blog static HTML
     steps:
       - name: "Checkout source-code"
