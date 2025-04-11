@@ -5,6 +5,9 @@ is all __currently__ built with `mkdocs` via `python` to generate pure HTML
 static HTML webpages for speed and security. This is for purely personal use
 so please be aware that this might not work for your purposes.
 
+For each site hosted a separate `workflow` genereates a build-artifact that can
+be utilized elsewhere.
+
 ## Usage ##
 ### Wrapper ###
 The `run.sh` script is just a simple wrapper to be able to run a ephemeral setup
