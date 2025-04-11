@@ -9,13 +9,13 @@ There is no greater task then to try and keep a introduction about oneself
 short, concise, honest and most importantly from sounding like posturing. 
 But we can always try;
 
-My name is Joakim Dellrud and I am a IT consultant by day and geek by night. 
+My name is Joakim Dellrud and I am a IT individual by day and geek by night. 
 I utilize this space to write things I feel like writing about, technology, 
 books and general thoughts that I might have.
 
 I am a avid proponent of all things Linux with a special love for the 
 philosophy that Opensource represents. My operating system of choice is 
-Debian and I do have a server buzzing away at home. 
+AlmaLinux and I do have a server buzzing away at home. 
 
 ## The philosophy ##
 <div class="grid cards" markdown>
@@ -24,7 +24,7 @@ Debian and I do have a server buzzing away at home.
     ---
     Linux enthusiast by day and nerd by night. Also a avid reader and of 
     course love everything Star Wars. Sometimes a cabin dweller, usually 
-    found in Sweden. Sometimes found chatting on #sourbeard@freenode.
+    found in Sweden. Sometimes found chatting on #sourbeard@libera.chat.
 
 -   __CREDO__
 
