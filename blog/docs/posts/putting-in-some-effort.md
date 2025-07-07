@@ -18,10 +18,10 @@ At the end of the day I do have some time right now for retrospectives and think
 ## But then again why not?
 Still even if this will turn out to be a futile effort I am sitting here thinking about things, I do believe strongly in having achievable goals. So let us then set some goals for the near future. I want to deliver at least one post each month, of any length, and deliver at least one guide on how I organise file-systems and the philosophy behind this.
 
-- [ ] A post for each month
-	- [ ] May
+- [x] A post for each month
+	- [x] May
 	- [ ] June
-	- [ ] July
+	- [x] July
 	- [ ] August
 	- [ ] September
 	- [ ] October
