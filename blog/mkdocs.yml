@@ -24,8 +24,10 @@ nav:
 
 markdown_extensions:
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.critic
+  - pymdownx.blocks.caption
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
@@ -58,8 +60,6 @@ extra:
       link: https://fosstodon.org/@squidfunk
     - icon: fontawesome/brands/github
       link: https://github.com/spixx/
-    - icon: fontawesome/brands/tumblr
-      link: https://www.tumblr.com/joakim-dellrud
     - icon: fontawesome/brands/linkedin
       link: https://se.linkedin.com/in/joakimdellrud
 ...

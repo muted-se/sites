@@ -20,13 +20,13 @@ Still even if this will turn out to be a futile effort I am sitting here thinkin
 
 - [x] A post for each month
 	- [x] May
-	- [ ] June
+	- [ ] June (FAILED)
 	- [x] July
-	- [ ] August
-	- [ ] September
-	- [ ] October
+	- [ ] August (FAILED)
+	- [ ] September (FAILED)
+	- [ ] October (FAILED)
 	- [ ] November
 	- [ ] December
-- [ ] Guide on file-system organisation
+- [x] Guide on file-system organisation
 
 It should be noted that I am also working on my home-lab which was due for some major changes and I think that might be of interest to. Either way I have material ready so let us see where this takes us.
